@@ -5,9 +5,9 @@ const jwt = require("jsonwebtoken");
 const JWT_SECRET = process.env.JWT_SECRET || "b9bcf41ecf01d47a544ee8884a0fb795acca634b918fe934e70eec9e170312f7";
 const GATEWAY_URL = process.env.GATEWAY_URL || "ws://localhost:8081/driver";
 
-// Addis Ababa default approx coordinates
-const BASE_LAT = 8.9806;
-const BASE_LNG = 38.7578;
+// Addis Ababa default approx coordinates (Matching Passenger App default location)
+const BASE_LAT = 9.005401;
+const BASE_LNG = 38.763611;
 
 // Number of mock drivers to spawn
 const NUM_DRIVERS = 3;
